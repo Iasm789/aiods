@@ -1,0 +1,327 @@
+
+
+.carousel {
+  position: relative;
+  bottom: 10px;
+  background: white;
+  border-radius: 10px;
+}
+.carousel-cell {
+  width: 341px;
+  height: 204px;
+  margin-right: 10px;
+
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+.carousel-cell-one{
+	width: 1300px;
+  height: 100px;
+  margin-right: 10px;
+
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+.carousel-cell-one:before {
+  display: block;
+}
+.carousel-cell:hover {
+	-webkit-box-shadow: 0px 2px 22px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 22px -6px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 22px -6px rgba(0,0,0,0.75);
+}
+.carousel-cell-one:hover {
+	-webkit-box-shadow: 0px 2px 22px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 22px -6px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 22px -6px rgba(0,0,0,0.75);
+}
+#logo{
+  position: relative;
+  bottom: -5px;
+}
+a{
+	width: auto;
+	height: auto;
+}
+.block{
+	position: relative;
+	bottom: -30px;
+}
+.block-preset{
+  position: relative;
+  bottom: -210px;
+}
+.block-preset h3{
+  position: relative;
+  top: -10px;
+  font-size: 18px;
+  font-family: Gilroy-Bold;
+  color: #3B3B3B;
+}
+.block-bibl{
+  position: relative;
+  bottom: -190px;
+}
+.block-bibl h3{
+  position: relative;
+  font-size: 18px;
+  font-family: Gilroy-Bold;
+  color: #3B3B3B;
+  top: -10px;
+}
+.block-blog{
+  position: relative;
+  bottom: -250px;
+}
+.block-blog h3{
+  position: relative;
+  font-size: 18px;
+  font-family: Gilroy-Bold;
+  color: #3B3B3B;
+  top: -10px;
+}
+footer{
+	position: relative;
+	bottom: -240px;
+}
+.drawer-menu{
+  position: relative;
+  bottom: -20px;
+}
+.menu-1{
+  position: relative;
+  bottom: -80px;
+}
+.menu-2{
+  position: relative;
+  bottom: -80px;
+}
+.drawer-menu-item{
+  position: relative;
+  text-align: center;
+  font-family: Gilroy-Black;
+  color: #3B3B3B;
+  font-size: 30px;
+}
+.class1{
+  position: relative;
+  top: -10px;
+}
+.class2{
+  position: relative;
+  top: -35px;
+}
+.class3{
+  position: relative;
+  top: -60px;
+}
+.class4{
+  position: relative;
+  top: -85px;
+}
+.class5{
+  position: relative;
+  top: -105px;
+}
+.class6{
+  position: relative;
+  top: -130px;
+}
+.class7{
+  position: relative;
+  top: -155px;
+}
+.class8{
+  position: relative;
+  top: -180px;
+}
+.class9{
+  position: relative;
+  top: -205px;
+}
+.class10{
+  position: relative;
+  top: -230px;
+}
+.class11{
+  position: relative;
+  top: -255px;
+}
+.item1{
+  position: relative;
+  bottom: -5px;
+}
+.item2{
+  position: relative;
+  top: -5px;
+}
+.item3{
+  position: relative;
+  top: -15px;
+}
+.item4{
+  position: relative;
+  top: -25px;
+}
+.item5{
+  position: relative;
+  top: -35px;
+}
+.item6{
+  position: relative;
+  top: -45px;
+}
+.item7{
+  position: relative;
+  top: -55px;
+}
+.item8{
+  position: relative;
+  top: -65px;
+}
+.item9{
+  position: relative;
+  top: -75px;
+}
+.item10{
+  position: relative;
+  top: -85px;
+}
+.drawer-menu{
+  overflow-y: auto;
+  height: 730px; 
+}
+.btn{
+position: relative;
+bottom: -15px;
+
+
+
+}
+
+.btn-primaru:hover,
+
+.btn-primary:focus,
+
+
+
+.button{
+  position: relative;
+  text-align: center;
+}
+.banner-text{
+  position: relative;
+  bottom: -15px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+.categor{
+  position: relative;
+  top: -10px;
+}
+.banner-img{
+  position: relative;
+  left: -194px;
+  bottom: -40px;
+}
+.banner-img2{
+  position: relative;
+  left: -194.5px;
+  bottom: -51px;
+}
+.bottom{
+  position: relative;
+  bottom: -230px;
+}
+.social{
+  position: relative;
+  top: -80px;
+}
+#logo3{
+  position: relative;
+  top: -80px;
+}
+.block-bio{
+  position: relative;
+  bottom: -60px;
+}
+.block-bio h3{
+  position: relative;
+  top: -10px;
+  font-size: 18px;
+  font-family: Gilroy-Bold;
+  color: #3B3B3B;
+}
+.featurette-heading{
+  font-family: Gilroy-Semibold;
+  font-size: 27px;
+  color: #3B3B3B;
+}
+.lead{
+  font-family: Gilroy-Semibold;
+  position: relative;
+  font-size: 20px;
+  bottom: -20px;
+  color: #3B3B3B;
+}
+mark{
+  background-color: #F6C000;
+  border-radius: 5px;
+}
+.block-kratko{
+  position: relative;
+  bottom: -120px;
+}
+.block-kratko h3{
+  position: relative;
+  top: -10px;
+  font-size: 18px;
+  font-family: Gilroy-Bold;
+  color: #3B3B3B;
+}
+.book{
+  width: 168px;
+  height: 263px;
+  margin-right: 10px;
+}
+#title{
+  font-family: Gilroy-Semibold;
+  font-size: 16px;
+  color: #3B3B3B;
+}
+#name{
+  font-family: Gilroy-Semibold;
+  font-size: 16px;
+  color: #3B3B3B;
+  position: relative;
+  top: -15px;
+}
+
+a{
+  text-decoration: none;
+}
+.btn-book{
+  position: relative;
+  top: -30px;
+}
+.btn-opis{
+  position: relative;
+  bottom: -10px;
+}
+.btn-blog{
+  position: relative;
+  top: -10px;
+}
+.drawer-dropdown-menu{
+  position: relative;
+  top: -10px;
+}

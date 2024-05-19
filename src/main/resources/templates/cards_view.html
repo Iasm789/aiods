@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel = "stylesheet">
+    <link href="../static/css/style1.css" rel = "stylesheet">
+    <link href="../static/css/flickity.min.css" rel = "stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon3.png">
+    <link rel="stylesheet" href="../static/css/cards.css">
+    <title>Нейросети</title>
+    <style>
+        /* Дополнительные стили для кнопки */
+        .login-register-btn {
+          background-color: transparent;
+          color: blue;
+          border: 2px solid blue;
+          border-radius: 20px;
+          transition: background-color 0.3s, color 0.3s;
+        }
+        .login-register-btn:hover {
+          background-color: blue;
+          color: white;
+        }
+        .modal-header, .modal-footer {
+            border: none;
+        }
+        .social-login-button {
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        .google-login-button {
+            background-color: #dd4b39;
+            color: white;
+        }
+        .vk-login-button {
+            background-color: #4c75a3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <div class="container vh-100">
+    <div class="container-xxl" id="main">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-xxl">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="../img/Black.svg" alt="Логотип" width="150" height="30" class="d-inline-block align-top">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./About.html">О проекте</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#main">Нейросети</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./createCard_view.html">Добавить ИИ</a>
+                        </li>
+                
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./cooperation.html">Сотрудничество</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Блог</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </nav>
+        </div>
+
+    <br><br><br>
+    
+
+<div class="cardDiv" th:if="${#lists.isEmpty(cards)}">
+    <p>No cards available yet.</p>
+</div>
+<div class="cardDiv">
+    <h3>Enter tags</h3>
+    <form action="#" th:action="@{/cards}" method="get">
+        <p>Tags: <input type="text" name="tags"/></p>
+        <p><input type="submit" value="Filter"/></p>
+    </form>
+    <hr>
+</div>
+<div class="cardDiv" th:each="card : ${cards}" th:unless="${#lists.isEmpty(cards)}">
+    <div class="cardDiv">
+        <p><b>Name: ZeroGPT </b> <span th:text="${card.name}"></span></p>
+        <p><b>Preview: <img src="../img/zerogpt.webp" alt="Edutoria" class="img-fluid"></b> <span th:text="${card.preview}"></span></p>
+        <p><b>Tags: text</b>
+            <span th:each="tag : ${card.tags}">
+                <span th:text="${tag}"></span>
+            </span>
+        </p>
+        <p><b>Link: <a href="https://zerogpt.cc/">https://zerogpt.cc/</a></b> <span class="link" th:text="${card.link}"></span></p>
+        <p><a th:href="@{'/cards/' + ${card.id}}">Read more</a></p>
+    </div>
+</div>
+<div class="container">
+    <footer class="py-3 my-4">
+        <nav aria-label="Footer navigation">
+            <ul class="nav justify-content-center pb-3 mb-0">
+            <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Главная</a></li>
+            <li class="nav-item"><a href="#main" class="nav-link px-2 text-muted">Нейросети</a></li>
+            <li class="nav-item"><a href="./createCard_view.html" class="nav-link px-2 text-muted">Добавить ИИ</a></li>
+            <li class="nav-item"><a href="./About.html" class="nav-link px-2 text-muted">О проекте</a></li>
+            <li class="nav-item"><a href="./cooperation.html" class="nav-link px-2 text-muted">Сотрудничество</a></li>
+        </ul>
+    <div class="col-md-12 d-flex align-items-center justify-content-center mb-1 mb-md-3 me-md-auto link-dark text-decoration-none">
+        <a href="#tiktok" class="tiktok"><img src="../img/TikTok.png" width="35" height="35" alt="TikTok"></a>
+    <a href="#vk" class="vk"><img src="../img/VK com.png" width="35" height="35" alt="Vk"></a>
+    <a href="#yandex" class="yandex"><img src="../img/yandex.png" width="26" height="26" alt="yandex email"></a>
+    </div>
+    <h1><a href="./index.html" id="logo2" class="justify-content-center d-flex align-items-center text-dark text-decoration-none">AI Odessey
+    </a></h1>
+    <p class="text-center text-muted">&copy; 2024</p>
+        </nav>
+    </footer>
+</div>
+
+
+<script src="../js/flickity.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../js/drawer.min.js" charset="utf-8"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

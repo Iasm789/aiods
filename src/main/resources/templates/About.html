@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>О нас</title>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
+    <link href="../static/css/flickity.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon3.png">
+    <link rel="stylesheet" type="text/css" href="../static/css/cardProfile.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Дополнительные стили для кнопки */
+        .login-register-btn {
+          background-color: transparent;
+          color: blue;
+          border: 2px solid blue;
+          border-radius: 20px;
+          transition: background-color 0.3s, color 0.3s;
+        }
+        .login-register-btn:hover {
+          background-color: blue;
+          color: white;
+        }
+        .modal-header, .modal-footer {
+            border: none;
+        }
+        .social-login-button {
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        .google-login-button {
+            background-color: #dd4b39;
+            color: white;
+        }
+        .vk-login-button {
+            background-color: #4c75a3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<script src="../js/bootstrap.bundle.min.js"></script>
+<div class="container vh-100">
+    <div class="container-xxl" id="main">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-xxl">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="../img/Black.svg" alt="Логотип" width="150" height="30" class="d-inline-block align-top">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#main">О проекте</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./cards_view.html">Нейросети</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./createCard_view.html">Добавить ИИ</a>
+                        </li>
+                
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./cooperation.html">Сотрудничество</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Блог</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Форма для входа/регистрации -->
+                    <form class="form-inline my-2 my-lg-0">
+                        <button class="btn login-register-btn my-2 my-sm-0" type="button" data-toggle="modal" data-target="#loginModal">Вход/Регистрация</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <br>
+
+    <div class="container-xxl">
+        <h1 class="mb-15">О проекте:</h1>
+        <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <p class="lead">Проект AI Odyssey разрабатывался в качестве инициативного проекта студентами <a  href="https://mospolytech.ru/" class="lead" style="color: blue;">Московского Политехнического Университета</a></p>
+          <p class="lead">AI Odyssey, ваш главный портал в мир нейронных сетей. Независимо от того, являетесь ли вы исследователем, профессионалом или просто интересуетесь искусственным интеллектом, наша платформа создана для того, чтобы помочь вам в вашем путешествии. AI Odyssey предлагает обширную и удобную базу данных самых популярных и мощных нейронных сетей, каждая из которых предназначена для решения конкретных задач - от рабочих проектов до академических исследований. </p>
+    
+        </div>
+        <div class="col-md-5 order-md-1">
+            <a href="./index.html">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="../img/logo1.png" width="400" height="400">
+            </a>
+          
+        </div>
+      </div>
+    </div>
+        <br>
+    
+    <div class="container-xxl">
+        <h1 class="mb-15">Сотрудничество с нами:</h1>
+        <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <p class="lead">Нашим партнером является Московский Политехнический Университет, один из лучших вузов нашей страны. Вы также можете присоединиться к нашей команде, и вместе мы покорим мир высоких технологий.</p>
+          <h1><p class="lead" style="color: blue;">Наши контакты: </p></h1>
+          <li style="color: blue;">Email ー CeoLitRoom@mail.ru</p>
+          <li style="color: blue;">Телефон: +7(999)666-99-66</p>
+          <li style="color: blue;">Адрес: 107023, Москва ул. Большая Семёновская, 38</li>
+          <br>
+          <p class="button btn-opis"><a class="btn btn-bg btn-primary " href="./cooperation.html">Сотрудничать</a></p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <br>
+            <a href="https://mospolytech.ru/">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="../img/Logo_Polytech_rus_main.png" width="400" height="400">
+            </a>
+        
+          
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <footer class="py-3 my-4">
+            <nav aria-label="Footer navigation">
+                <ul class="nav justify-content-center pb-3 mb-0">
+                    <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Главная</a></li>
+                    <li class="nav-item"><a href="./cards_view.html" class="nav-link px-2 text-muted">Нейросети</a></li>
+                    <li class="nav-item"><a href="./createCard_view.html" class="nav-link px-2 text-muted">Добавить ИИ</a></li>
+                    <li class="nav-item"><a href="#main" class="nav-link px-2 text-muted">О проекте</a></li>
+                    <li class="nav-item"><a href="./cooperation.html" class="nav-link px-2 text-muted">Сотрудничество</a></li>
+                    </ul>
+                    <div class="col-md-12 d-flex align-items-center justify-content-center mb-1 mb-md-3 me-md-auto link-dark text-decoration-none">
+                        <a href="#tiktok" class="tiktok"><img src="../img/TikTok.png" width="35" height="35" alt="TikTok"></a>
+                        <a href="#vk" class="vk"><img src="../img/VK com.png" width="35" height="35" alt="Vk"></a>
+                        <a href="#yandex" class="yandex"><img src="../img/yandex.png" width="26" height="26" alt="yandex email"></a>
+                    </div>
+                    <h1><a href="./index.html" id="logo2" class="justify-content-center d-flex align-items-center text-dark text-decoration-none">AI Odessey
+                    </a></h1>
+                    <p class="text-center text-muted">&copy; 2024</p>
+                </nav>
+            </footer>
+        </div>
+    </div>
+    
+    <!-- Модальное окно для входа -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Вход</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Форма входа -->
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Пароль" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Войти</button>
+                    </form>
+                    <hr>
+                    <!-- Социальные кнопки для входа -->
+                    <button type="button" class="btn btn-lg btn-block social-login-button google-login-button">Войти с Google</button>
+                    <button type="button" class="btn btn-lg btn-block social-login-button vk-login-button">Войти с ВКонтакте</button>
+                </div>
+                <div class="modal-footer">
+                    <p>Еще нет аккаунта? <button type="button" class="btn btn-link" data-toggle="modal" data-target="#registerModal" data-dismiss="modal">Зарегистрируйтесь</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Модальное окно для регистрации -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Регистрация</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Форма регистрации -->
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Номер телефона" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Пароль" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Зарегистрироваться</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Уже есть аккаунт? <button type="button" class="btn btn-link" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Войти</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function toggleForms() {
+            $('#loginForm').toggle();
+            $('#registerForm').toggle();
+        }
+    </script>
+    </body>
+    </html>    
